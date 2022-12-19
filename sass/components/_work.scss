@@ -1,3 +1,7 @@
+.work {
+    @extend %section;
+    padding-top: 0;
+}
 .work__title {
     margin-top: 0;
     margin-bottom: 0;
@@ -8,6 +12,7 @@
     margin-bottom: 50px;
 }
 .work__list {
+    @extend %list;
     display: flex;
     justify-content: space-between;
 }

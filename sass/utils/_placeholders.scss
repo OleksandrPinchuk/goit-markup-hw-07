@@ -1,23 +1,29 @@
-html {
-    box-sizing: border-box;
-}
-*,
-*::before,
-::after {
-    box-sizing: inherit;
-}
-.page {
-    color: var(--primary-text-color);
-    font-family: "roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-}
-img {
-    display: block;
-}
-.list {
+%list {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+%--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0000);
+    overflow: hidden;
 }

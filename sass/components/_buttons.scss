@@ -16,11 +16,13 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__button:hover,
-.hero__button:focus {
+
+    &:hover,
+    &:focus {
     color: #188ce8;
+    }
 }
+
 /*---------------- button portfolio---------------- */
 .filter__button {
     display: inline-block;
@@ -40,15 +42,17 @@
     letter-spacing: 0.03em;
     text-align: center;
     cursor: pointer;
-}
-.filter__button:hover,
-.filter__button:focus {
+
+    &:hover,
+    &:focus {
     color: $white-text-color;
     background-color: $accent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
+
 // footer-button//
 .subscribe__button {
     display: flex;
@@ -72,52 +76,58 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe__button:hover,
-.subscribe__button:focus {
+
+    &:hover,
+    &:focus {
     color: #188ce8;
+    }
 }
+
 // modal-button //
-.modal__button--close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-}
-.modal__button--close:focus,
-.modal__button--close:hover {
-    fill: $accent-color;
-}
-.modal__button--submit  {
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 52px;
-    min-width: 200px;
-    border-radius: 4px;
-    border: none;
-    background-color: $accent-color;
-    color: $white-text-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__button--submit:hover,
-.modal__button--submit:focus {
-    color: #188ce8;
+.modal__button {
+    &--close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+            fill: $accent-color;
+        }
+    }
+    &--submit  {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 52px;
+        min-width: 200px;
+        border-radius: 4px;
+        border: none;
+        background-color: $accent-color;
+        color: $white-text-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: #188ce8;
+        }
+    }
 }

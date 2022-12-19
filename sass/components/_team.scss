@@ -1,3 +1,7 @@
+.team {
+    @extend %section;
+    background-color: $secondary-background-color;
+}
 .team__title {
     margin-top: 0;
     margin-bottom: 0;
@@ -23,6 +27,7 @@
     text-align: center;
 }
 .team__list {
+    @extend %list;
     display: flex;
     justify-content: space-between;
 }
