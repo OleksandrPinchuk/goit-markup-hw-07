@@ -1,0 +1,8 @@
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter .filter__item + .filter__item {
+    margin-left: 8px;
+}
